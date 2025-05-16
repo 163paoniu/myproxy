@@ -2,8 +2,8 @@
   "rewrites": [
     { "source": "/proxy/google", "destination": "https://www.google.com" },
     { 
-      "source": "/proxy/:path*", 
-      "destination": "https://:path*" 
+      "source": "/proxy/(.*)", 
+      "destination": "https://$1" 
     }
   ]
 }
