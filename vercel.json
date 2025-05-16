@@ -4,10 +4,6 @@
     { 
       "source": "/proxy/:path*", 
       "destination": "https://:path*" 
-    },
-    { 
-      "source": "/httpproxy/:path*", 
-      "destination": "http://:path*" 
     }
   ]
 }
