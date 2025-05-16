@@ -1,8 +1,13 @@
 {
   "rewrites": [
     { "source": "/proxy/google", "destination": "https://www.google.com" },
-    { "source": "/proxy/:match/:url*/", "destination": "https://:match/:url*/" },
-    { "source": "/httpproxy/:match/:url*", "destination": "http://:match/:url*" },
-    { "source": "/httpproxy/:match/:url*/", "destination": "http://:match/:url*/" }
+    { 
+      "source": "/proxy/:path*", 
+      "destination": "https://:path*" 
+    },
+    { 
+      "source": "/httpproxy/:path*", 
+      "destination": "http://:path*" 
+    }
   ]
 }
